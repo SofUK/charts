@@ -1,20 +1,44 @@
 <! DOCTYPE html>
 <html>
 
-    <head>
+    <head class="jumbotron">
     <!-- Required meta tags always come first-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!--Boostrap CSS-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <div class="container"></div>
     </head>
     <body>
-        <h1>
-            This a header!
-        </h1>
+        <div class="container">
+            <div class="row">
+                <h1>
+                    This a header!
+                </h1>
+            </div>
+            <div class="row">
+                <button type="button" id="addButton"
+                    class="btn btn-primary"
+                    onclick="rest();">Get Tickets
+                </button>
+            </div>
+        </div>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            function rest() {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open('GET', 'https://support.apps.valeo.com/rest/api/2/search?jql="key"="BARFLOW-11329"', true);
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState === 4) {
+                    alert(xmlhttp.response); //Outputs a DOMString by default
+                    }
+                }
+                // Send the GET request
+                xmlhttp.send();
+            }
+        </script>
     </body>
 </html>
