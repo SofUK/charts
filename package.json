@@ -1,0 +1,27 @@
+{
+  "name": "charts",
+  "version": "1.0.0",
+  "description": "Site to display charts from jira",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofUK/charts.git"
+  },
+  "author": "Loic Alpha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SofUK/charts/issues"
+  },
+  "homepage": "https://github.com/SofUK/charts#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
