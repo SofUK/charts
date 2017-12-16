@@ -1,0 +1,16 @@
+.row-header{
+    margin: 0px auto;
+    padding: 0px;
+}
+.row-content{
+    margin: px auto;
+    padding:50 px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px; 
+}
+.jumbotron{
+    margin: px auto;
+    padding:70 px 3px 70px 3px;
+    background: #9575CD;
+    color: floralwhite;
+}
